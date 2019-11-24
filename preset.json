@@ -1,6 +1,5 @@
 {
   "useConfigFiles": true,
-  "cssPreprocessor": "node-sass",
   "plugins": {
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
@@ -9,21 +8,10 @@
         "save",
         "commit"
       ]
-    },
-    "@vue/cli-plugin-router": {},
-    "@vue/cli-plugin-vuex": {},
-    "configs": {
-      "vue": {
-        "productionSourceMap": false,
-        "devServer": {
-          "overlay": {
-            "warnings": true,
-            "errors": true
-          },
-          "disableHostCheck": true
-        },
-        "lintOnSave": true
-      }
     }
-  }
+  },
+  "router": true,
+  "routerHistoryMode": false,
+  "vuex": true,
+  "cssPreprocessor": "node-sass"
 }

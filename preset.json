@@ -1,22 +1,17 @@
 {
-  "vetur.validation.template": false,
-  "vetur.validation.script": false,
-  "vetur.validation.style": false,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "editor.formatOnSave": false,
-  "javascript.validate.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
+  "useConfigFiles": true,
+  "plugins": {
+    "@vue/cli-plugin-babel": {},
+    "@vue/cli-plugin-eslint": {
+      "config": "standard",
+      "lintOn": [
+        "save",
+        "commit"
+      ]
+    }
   },
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.options": {
-    "extensions":[".html",".js",".vue"]
-  },
-  "eslint.validate": [
-    {"language": "html","autoFix": true},
-    {"language": "javascript","autoFix": true},
-    {"language": "vue","autoFix": true}
-  ]
+  "router": true,
+  "routerHistoryMode": false,
+  "vuex": true,
+  "cssPreprocessor": "node-sass"
 }

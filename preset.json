@@ -1,5 +1,6 @@
 {
   "useConfigFiles": true,
+   "cssPreprocessor": "node-sass",
   "plugins": {
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
@@ -8,10 +9,8 @@
         "save",
         "commit"
       ]
-    }
-  },
-  "router": true,
-  "routerHistoryMode": false,
-  "vuex": true,
-  "cssPreprocessor": "node-sass"
+    },
+    "@vue/cli-plugin-router": {},
+    "@vue/cli-plugin-vuex": {}
+  }
 }
